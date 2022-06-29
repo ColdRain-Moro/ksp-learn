@@ -41,10 +41,6 @@ public fun TestClass.sumInts(): Int {
 这里以idea为例, 使用idea的gradle插件，将ksp生成代码的路径加入sourceSrc中，
 同时也加到编译路径中
 
-### Processor的process方法返回的list一旦不为空将重复执行
-
-这一点掘金的文章也没讲，照抄他的代码都有问题，有点无语
-
 ~~~kts
 plugins {
     idea
@@ -67,6 +63,10 @@ sourceSets {
     }
 }
 ~~~
+
+### Processor的process方法返回的list一旦不为空将重复执行
+
+这一点掘金的文章也没讲，照抄他的代码都有问题，有点无语
 
 ## What is Ksp?
 
